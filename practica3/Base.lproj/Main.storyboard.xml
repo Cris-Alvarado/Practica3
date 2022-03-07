@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practica3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-DA-bXO">
+                                <rect key="frame" x="34" y="401" width="80" height="152"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casino PONY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-l6-ZZa">
+                                <rect key="frame" x="40" y="94" width="334" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4e-6P-2uw">
+                                <rect key="frame" x="136" y="650" width="131" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="jugarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhb-qt-mbq"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="rlQ-it-gWH">
+                                <rect key="frame" x="85" y="401" width="232" height="152"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reversoBaraja" translatesAutoresizingMaskIntoConstraints="NO" id="zc6-ma-LxL">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="152"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="OY4-RT-WG6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reversoBaraja" translatesAutoresizingMaskIntoConstraints="NO" id="vcb-JA-GwH">
+                                        <rect key="frame" x="151" y="0.0" width="81" height="152"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace-aces-cards-chips-wallpaper-preview.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="S2d-7O-3AQ">
+                                <rect key="frame" x="43" y="133" width="328" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="M4D-B3-Skx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W4e-6P-2uw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="2Tz-Uv-QYJ"/>
+                            <constraint firstItem="Lad-l6-ZZa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="50S-uy-Ohq"/>
+                            <constraint firstItem="rlQ-it-gWH" firstAttribute="centerX" secondItem="W4e-6P-2uw" secondAttribute="centerX" id="6Jg-Lm-G7w"/>
+                            <constraint firstItem="ZMe-DA-bXO" firstAttribute="top" secondItem="S2d-7O-3AQ" secondAttribute="bottom" constant="70" id="9mU-HK-vRL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZMe-DA-bXO" secondAttribute="trailing" constant="300" id="EVK-MF-cDN"/>
+                            <constraint firstItem="Lad-l6-ZZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G8S-pm-Duc"/>
+                            <constraint firstItem="W4e-6P-2uw" firstAttribute="top" secondItem="rlQ-it-gWH" secondAttribute="bottom" constant="97" id="KCu-rx-uxD"/>
+                            <constraint firstItem="ZMe-DA-bXO" firstAttribute="top" secondItem="rlQ-it-gWH" secondAttribute="top" id="Kre-iK-cMI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W4e-6P-2uw" secondAttribute="bottom" constant="172" id="Nuh-z1-yza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rlQ-it-gWH" secondAttribute="trailing" constant="97" id="Qz7-rR-Mxj"/>
+                            <constraint firstItem="ZMe-DA-bXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="W9I-yf-SGg"/>
+                            <constraint firstItem="Lad-l6-ZZa" firstAttribute="centerX" secondItem="S2d-7O-3AQ" secondAttribute="centerX" id="Yd4-nB-Ct0"/>
+                            <constraint firstItem="S2d-7O-3AQ" firstAttribute="top" secondItem="Lad-l6-ZZa" secondAttribute="bottom" constant="39" id="a4W-YD-54b"/>
+                            <constraint firstItem="ZMe-DA-bXO" firstAttribute="bottom" secondItem="rlQ-it-gWH" secondAttribute="bottom" id="au3-o0-Hn3"/>
+                            <constraint firstItem="Lad-l6-ZZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="net-nO-E3P"/>
+                            <constraint firstItem="rlQ-it-gWH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="rUI-wb-I0x"/>
+                            <constraint firstItem="S2d-7O-3AQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="vtp-Mw-wh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZMe-DA-bXO" secondAttribute="bottom" constant="309" id="ztV-9V-fgy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carta1IV" destination="zc6-ma-LxL" id="NNv-4H-ohT"/>
+                        <outlet property="carta2IV" destination="vcb-JA-GwH" id="kKq-0H-rPN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ace-aces-cards-chips-wallpaper-preview.jpeg" width="728" height="410"/>
+        <image name="reversoBaraja" width="703" height="1102"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
